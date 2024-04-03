@@ -1,5 +1,5 @@
 .filters {
-  background: white;
+  background: rgb(220, 200, 200);
   width: 100%;
 }
 .filters li {
@@ -20,29 +20,29 @@
 }
 .widget {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   margin: 50px auto;
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(117, 113, 113, 0.685);
 }
 .widget .cover {
-  height: 160px;
+  height: 220px;
   overflow: hidden;
 }
 .widget .cover img {
   width: 100%;
-  height: auto;
-  min-height: 160px;
+  height: 100%;
+  min-height: 260px;
   border-radius: 4px 4px 0 0;
 }
 .widget .photo {
   position: absolute;
-  top: 85px;
-  left: 50%;
-  width: 100px;
-  height: 100px;
+  top: 35px;
+  left: 20%;
+  width: 150px;
+  height: 150px;
   margin: 0 0 0 -55px;
   border: 5px solid #fff;
   border-radius: 50%;
@@ -56,7 +56,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #999;
+  color: #e51010;
 }
 .widget h1 {
   margin: 60px 0 20px;
@@ -70,7 +70,7 @@
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #2cdfd3;
+  background: #df0b0b;
 }
 .widget ul.position-left {
   left: -26px;
@@ -84,14 +84,14 @@
 .widget ul li a {
   display: block;
   padding: 5px 6px;
-  color: #fff;
+  color: #0e1501;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
+  border-bottom: 1px solid #26d616;
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background-color: #7e2cd5;
 }
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
@@ -99,4 +99,8 @@
 .widget ul li:last-child > a {
   border: none;
   border-radius: 0 0 3px 0;
+}
+
+body {
+  background-color: chocolate;
 }
