@@ -33,14 +33,29 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name} ${variables.lastName} ${variables.age}</h1>
-          <h2>${variables.role}</h2>
-          <h3>${variables.city}, ${variables.country}</h3>
-          <ul class= ${variables.socialMediaPosition}>
-            <li><a href="${variables.youtube}" Target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="${variables.github}" Target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="${variables.linkedin}" Target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${variables.instagram}" Target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <h1>${variables.name ? variables.name : ""} ${
+    variables.lastName ? variables.lastName : " "
+  } 
+          ${variables.age ? variables.age : ""}</h1>
+          <h2>${variables.role ? variables.role : ""}</h2>
+          <h3>${variables.city ? variables.city : ""} ${
+    variables.country ? variables.country : ""
+  }</h3>
+          <ul class= ${
+            variables.socialMediaPosition ? variables.socialMediaPosition : ""
+          }>
+            <li><a href="${
+              variables.youtube
+            }" Target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="${
+              variables.github
+            }" Target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="${
+              variables.linkedin
+            }" Target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="${
+              variables.instagram
+            }" Target="_blank"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
